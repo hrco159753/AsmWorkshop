@@ -10,7 +10,7 @@ SECTIONS {
         *(.text*)
     } > FLASH
 
-    .stack :
+    .stack(NOLOAD) :
     {
     } > RAM
     __stack_top = .;
